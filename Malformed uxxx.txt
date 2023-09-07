@@ -1,0 +1,4 @@
+
+Malformed \uxxx ->
+
+grep -rnw .m2 -e '\u0000' usunac z .m2 zepsute pliki

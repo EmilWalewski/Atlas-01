@@ -1,0 +1,16 @@
+
+
+To collect into a Map that contains a single value by key (Map<MyKey,MyObject>), use Collectors.toMap().
+To collect into a Map that contains multiple values by key (Map<MyKey, List<MyObject>>), use Collectors.groupingBy().
+
+Mapping:
+
+items.stream().collect(Collectors.groupingBy(Item::getPrice, Collectors.toSet()))
+
+result as Map<BigDecimal, Set<Item>>
+
+
+items.stream().collect(Collectors.groupingBy(Item::getPrice,
+    Collectors.mapping(Item::getName, Collectors.toSet())))
+
+result as Map<BigDeciaml, Set<String>>

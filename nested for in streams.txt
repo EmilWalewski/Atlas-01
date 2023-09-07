@@ -1,0 +1,5 @@
+
+
+W skócie użycie flat mapa po listr.stream().flatMap(....
+
+a w nim flatMap, a w nim następne flatMap itp

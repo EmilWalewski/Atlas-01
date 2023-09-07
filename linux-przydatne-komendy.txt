@@ -1,0 +1,20 @@
+
+--------------------------------------------------------------------
+from remote to local: scp -r <username>@<ip>:<path to file> .
+
+from local to remote: scp a.txt  <username>@<ip>:<path to file>
+
+
+
+jak mamy plik z koncowka -- gz -- to oznacza ze najpierw trzeba to zdekompresować poleceniem gunzip
+
+potem mozna uzyc polecenia unzip, zless, itp
+---------------------------------------------------------------------
+
+grep -B 10 -A 10 "<fraza>" <plik>
+
+find . -type f -print | grep -i '' | xargs grep -A 5 -B 5 -i '<fraza>'
+
+-------------------------------------------------------------------------
+
+netsh interface portproxy set v4tov4 listenport=9990 listenaddress=0.0.0.0 connectport=9990 connectaddress=172.28.191.252
